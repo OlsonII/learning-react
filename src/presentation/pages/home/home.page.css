@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panels-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18vw auto;
+}
+
+.right-panel{
+    background-color: palevioletred;
+}
+
+.left-panel{
+    background-color: cadetblue;
+}
+
+
+
+@media (max-width: 870px) {
+    .panels-container{
+        grid-template-columns: 25vw auto;
+    }
+}
+
+@media (max-width: 570px) {
+    .panels-container{
+        grid-template-columns: 0vw auto;
+    }
+}
