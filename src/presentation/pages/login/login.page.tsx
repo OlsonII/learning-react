@@ -49,7 +49,7 @@ export class LoginPage extends React.Component{
                             <input type="password" placeholder="Contraseña"/>
                         </div>
 
-                        <input type="submit" value="Iniciar Sesion" className="btn solid"/>
+                        <input type="submit" value="Iniciar Sesion" className="buttonHeader solid"/>
                         <p className="social-text">O inicie sesion con una red social</p>
                         <div className="social-media">
                             <a href="/" className="social-icon">
@@ -87,7 +87,7 @@ export class LoginPage extends React.Component{
                             <input type="text" placeholder="Telefono"/>
                         </div>
 
-                        <input type="submit" value="Registrarme" className="btn solid"/>
+                        <input type="submit" value="Registrarme" className="buttonHeader solid"/>
                         <p className="social-text">O registrarme con una red social</p>
                         <div className="social-media">
                             <a href="/" className="social-icon">
@@ -109,7 +109,7 @@ export class LoginPage extends React.Component{
                         <div className="content">
                             <h3>Nuevo aqui?</h3>
                             <p>...</p>
-                            <button className="btn transparent" onClick={() => this.toSignUpForm()}>Registrarme</button>
+                            <button className="buttonHeader transparent" onClick={() => this.toSignUpForm()}>Registrarme</button>
                         </div>
                         <RegisterIllustration className="image"/>
                     </div>
@@ -118,7 +118,7 @@ export class LoginPage extends React.Component{
                         <div className="content">
                             <h3>Ya es uno de nosotros?</h3>
                             <p>...</p>
-                            <button className="btn transparent" onClick={() => this.toSignInForm()}>Iniciar sesion</button>
+                            <button className="buttonHeader transparent" onClick={() => this.toSignInForm()}>Iniciar sesion</button>
                         </div>
                         <LoginIllustration className="image"/>
                     </div>

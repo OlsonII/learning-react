@@ -1,4 +1,6 @@
 export class HomePageState {
-    subPage: any;
-    isRedPage: boolean = true;
+    public today: string | undefined;
+    public history: string | undefined;
+    public profile: string | undefined;
+    public page: any;
 }

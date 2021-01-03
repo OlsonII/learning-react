@@ -132,7 +132,7 @@ form.sign-in-form {
     border-color: #008000;
 }
 
-.btn {
+.buttonHeader {
     width: 150px;
     background-color: #008000;
     border: none;
@@ -147,7 +147,7 @@ form.sign-in-form {
     transition: 0.5s;
 }
 
-.btn:hover {
+.buttonHeader:hover {
     background-color: #006400;
 }
 .panels-container {
@@ -216,7 +216,7 @@ form.sign-in-form {
     padding: 0.7rem 0;
 }
 
-.btn.transparent {
+.buttonHeader.transparent {
     margin: 0;
     background: none;
     border: 2px solid #fff;
@@ -330,7 +330,7 @@ form.sign-in-form {
         padding: 0.5rem 0;
     }
 
-    .btn.transparent {
+    .buttonHeader.transparent {
         width: 110px;
         height: 35px;
         font-size: 0.7rem;

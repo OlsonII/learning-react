@@ -1,0 +1,70 @@
+.flip {
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    perspective: 500px;
+    top: 50%;
+    left: 50%;
+    margin: -24px 0 0 -80px;
+}
+.flip a {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.flip a .front,
+.flip a .back {
+    margin: 0;
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+.flip a .front {
+    background-color: #222;
+    color: #fff;
+    transform: rotateY(0) translateZ(24px);
+}
+.flip a .back {
+    background-color: rgba(255,255,255,0);
+    color: rgba(34,34,34,0);
+    transform: rotateX(90deg) translateZ(24px);
+    overflow: hidden;
+}
+.flip a .back:after {
+    content: '';
+    position: absolute;
+    top: -32%;
+    left: -10%;
+    width: 120%;
+    height: 50%;
+    background: #222;
+    transform: rotate(8deg);
+    transition: all 0.5s ease;
+    transition-delay: 0.15s;
+}
+.flip a:hover {
+    transform: translateZ(-24px) rotateX(-90deg);
+}
+.flip a:hover .front {
+    background: #000;
+    transition: all 0.8s ease;
+}
+.flip a:hover .back {
+    color: #222;
+    transition: color 0.4s linear;
+    background: #fff;
+}
+.flip a:hover .back:after {
+    transform: rotate(6deg) translate(100px, -18px);
+}
